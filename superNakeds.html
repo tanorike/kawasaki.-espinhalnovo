@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/estiloSN.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="_img/Kawasaki.ico">
+    <title>SuperNaked</title>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <a href="index.html"><img id="iconeHeader" src="_img/kawasaki-logo.svg"></a>
+            <nav id="menu">
+                <ul type="disk">
+                    <a href="historia.html"><li><span style="border-right: 1px solid white;">História&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                    <a href="conce.html"><li><span style="border-right: 1px solid white;">Concessonárias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                </ul>
+            </nav>
+        </header><br><br><br><br>
+        <hr id="linha">
+        <div class="produtos">
+            <p>Veículos</p>
+            <div class="items">
+                <ul id="items">
+                    <h1>MOTOS</h1>
+                    <a href="superSports.html"><li id="fig"><figure><img src="_img/SuperSports.jpg"/><figcaption><h2>SuperSports & Sports</h2></figcaption></figure></li></a>
+                    <a href="superNakeds.html"><li id="fig"><figure><img src="_img/Supernaked.jpg"/><figcaption><h2>SuperNaked</h2></figcaption></li></a>
+                </ul>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.produtos').addEventListener('mouseenter', function() {
+                setTimeout(() => {
+                    this.querySelector('.items').classList.add('show');
+                }, 1000);
+            });
+            document.querySelector('.produtos').addEventListener('mouseleave', function() {
+                this.querySelector('.items').classList.remove('show');
+            });
+        </script>
+
+        <section id="corpo"><hr id="linha">
+            <div class="Z900">
+                <h1>Z900</h1>
+                <p>Criada para impressionar. Bem vinda à familia Z. A nova Z900 está equipada com recursos que
+                    oferecem uma experiência de condução focada e sofisticada: uma suspensão frontal
+                    invertido de grande diâmetro para um maior ajuste, uma suspensão traseira Öhlins
+                    S46, travões em malha de aço, pinças Brembo M4.32 e um esquema de cores
+                    especial . Domine a estrada com a mais recente expressão do espírito Z.</p>
+                <img src="_img/Kawasaki-Z900.jpg">
+            </div>
+            <hr id="linha">
+            <div class="Z1000">
+                <h1>Z1000</h1>
+                <p>A Z1000 eleva a essência da condução agressiva com design ousado e desempenho incomparável. Equipada com um motor de alta performance, suspensão dianteira invertida ajustável, freios Brembo de precisão e um chassi projetado para máxima estabilidade, ela entrega uma pilotagem visceral e emocionante. Com um design que exala poder e elegância, a Z1000 é mais que uma moto, é um símbolo do espírito Z em sua forma mais pura.</p>
+                <img src="_img/Kawasaki-Z1000.jpg">
+            </div>
+            <hr id="linha">
+            <div class="Z750">
+                <h1>Z750</h1>
+                <p>A Z750 combina estilo arrojado e desempenho versátil, oferecendo uma experiência de condução única. Com um motor responsivo, chassi equilibrado e suspensão ajustada para máxima agilidade, ela é perfeita tanto para as ruas quanto para as estradas mais desafiadoras. Seu design icônico reflete o DNA da família Z, enquanto a engenharia de ponta garante conforto e confiança em cada curva.</p>
+                <img src="_img/Z750.jpg">
+            </div>
+            <hr id="linha">
+        </section>
+        <footer>
+            <br><h1>CONTACTOS</h1>
+            <a href="Contactos.html"><p>Contactos Kawasaki Portugal</p></a><br><br><br><br><br><br><br>
+        </footer>
+    </div>
+</body>
+</html>
