@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/estiloConta.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="_img/Kawasaki.ico">
+        <script src="_js/script.js" defer></script>
+        <title>Contactos</title>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <a href="index.html"><img id="iconeHeader" src="_img/kawasaki-logo.svg"></a>
+                <nav id="menu">
+                    <ul type="disk">
+                        <a href="historia.html"><li><span style="border-right: 1px solid white;">História&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                        <a href="conce.html"><li><span style="border-right: 1px solid white;">Concessonárias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                    </ul>
+                </nav>
+            </header><br><br><br><br>
+            <hr id="linha">
+            <div class="produtos">
+                <p>Veículos</p>
+                <div class="items">
+                    <ul id="items">
+                        <h1>MOTOS</h1>
+                        <a href="superSports.html"><li id="fig"><figure><img src="_img/SuperSports.jpg"/><figcaption><h2>SuperSports & Sports</h2></figcaption></figure></li></a>
+                        <a href="superNakeds.html"><li id="fig"><figure><img src="_img/Supernaked.jpg"/><figcaption><h2>SuperNaked</h2></figcaption></li></a>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                document.querySelector('.produtos').addEventListener('mouseenter', function() {
+                    setTimeout(() => {
+                        this.querySelector('.items').classList.add('show');
+                    }, 1000);
+                });
+                document.querySelector('.produtos').addEventListener('mouseleave', function() {
+                    this.querySelector('.items').classList.remove('show');
+                });
+            </script>
+            <section id="corpo">
+                <div class="contactos">
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSftDk9Zeg3oNtdt7W2fK2j5crq4700DsjTX20h8KFLPSY35sw/viewform?embedded=true" width="640" height="824" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+                </div>
+            </section><hr id="linha">
+            <footer>
+                <br><h1>CONTACTOS</h1>
+                <a href="Contactos.html"><p>Contactos Kawasaki Portugal</p></a><br><br><br><br><br><br><br>
+            </footer>
+        </div>
+    </body>
+</html>

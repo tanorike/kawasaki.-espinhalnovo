@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="_img/Kawasaki.ico">
+        <script src="_js/script.js" defer></script>
+        <title>Página Incial</title>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <a href="index.html"><img id="iconeHeader" src="_img/kawasaki-logo.svg"></a>
+                <nav id="menu">
+                    <ul type="disk">
+                        <a href="historia.html"><li><span style="border-right: 1px solid white;">História&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                        <a href="conce.html"><li><span style="border-right: 1px solid white;">Concessonárias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                    </ul>
+                </nav>
+            </header><br><br><br><br>
+            <hr id="linha">
+            <div class="produtos">
+                <p>Veículos</p>
+                <div class="items">
+                    <ul id="items">
+                        <h1>MOTOS</h1>
+                        <a href="superSports.html"><li id="fig"><figure><img src="_img/SuperSports.jpg"/><figcaption><h2>SuperSports & Sports</h2></figcaption></figure></li></a>
+                        <a href="superNakeds.html"><li id="fig"><figure><img src="_img/Supernaked.jpg"/><figcaption><h2>SuperNaked</h2></figcaption></li></a>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                document.querySelector('.produtos').addEventListener('mouseenter', function() {
+                    setTimeout(() => {
+                        this.querySelector('.items').classList.add('show');
+                    }, 1000);
+                });
+                document.querySelector('.produtos').addEventListener('mouseleave', function() {
+                    this.querySelector('.items').classList.remove('show');
+                });
+            </script>
+
+
+            <section id="corpo">
+                <div class="carrosel">
+                    <div class="conteiner" id="img">
+                        <img src="_img/Kawasaki-Z900.jpg" alt="Kawasaki Z900">
+                        <img src="_img/Kawasaki-Z1000.jpg" alt="Kawasaki Z1000">
+                        <img src="_img/kawasaki-ninja-zx-4rr.jpg" alt="Kawasaki Ninja ZX4rr">
+                        <img src="_img/h2r.jpg" alt="Kawasaki Ninja H2R">
+                        <img src="_img/Z750.jpg" alt="Kawasaki Z750">
+                    </div>
+                </div><hr id="linha">
+                <div class="vid1">
+                    <h1>ZX6r</h1>
+                    <p>Experimente a obsessão das Supersport com a Nova Ninja ZX-6R.
+                        Ultrapassa todos os limites com uma performance inigualável.
+                        Para a Kawasaki, a capacidade de inspirar confiança e
+                        clareza quando mais se precisa é o maior incentivo.</p>
+                    <iframe id="vidd" src="https://www.youtube.com/embed/zrYE6CLcazc?Version=3&loop=1&playlist=zrYE6CLcazc" title="ZX6r" frameborder="0" allow="accelerometer; autoplay=true; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen autoplay loop></iframe>
+                </div><hr id="linha">
+                <div class="spirit">
+                    <h2>InZpira-te</h2>
+                    <h1>Z Spirit</h1>
+                    <p>Com um corpo agressivo e exclusivo, o design Z transporta-nos para o que na realidade interessa numa naked. Funcionalidade e desempenho.</p>
+                    <a href="superNakeds.html"><h4>Descubra Mais</h4></a>
+                    <img id="spirit" src="_img/z-spirit.jpg">
+                </div><hr id="linha">
+            </section>
+            <footer>
+                <br><h1>CONTACTOS</h1>
+                <a href="Contactos.html"><p>Contactos Kawasaki Portugal</p></a><br><br><br><br><br><br><br>
+            </footer>
+        </div>
+    </body>
+</html>

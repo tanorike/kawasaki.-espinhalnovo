@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="_css/estiloH.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="_img/Kawasaki.ico">
+        <script src="_js/script.js" defer></script>
+        <title>Historia</title>
+    </head>
+    <body>
+        <div id="interface">
+            <header id="cabecalho">
+                <a href="index.html"><img id="iconeHeader" src="_img/kawasaki-logo.svg"></a>
+                <nav id="menu">
+                    <ul type="disk">
+                        <a href="historia.html"><li><span style="border-right: 1px solid white;">História&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                        <a href="conce.html"><li><span style="border-right: 1px solid white;">Concessonárias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                    </ul>
+                </nav>
+            </header><br><br><br><br>
+            <hr id="linha">
+            <div class="produtos">
+                <p>Veículos</p>
+                <div class="items">
+                    <ul id="items">
+                        <h1>MOTOS</h1>
+                        <a href="superSports.html"><li id="fig"><figure><img src="_img/SuperSports.jpg"/><figcaption><h2>SuperSports & Sports</h2></figcaption></figure></li></a>
+                        <a href="superNakeds.html"><li id="fig"><figure><img src="_img/Supernaked.jpg"/><figcaption><h2>SuperNaked</h2></figcaption></li></a>
+                    </ul>
+                </div>
+            </div>
+            <script>
+                document.querySelector('.produtos').addEventListener('mouseenter', function() {
+                    setTimeout(() => {
+                        this.querySelector('.items').classList.add('show');
+                    }, 1000);
+                });
+                document.querySelector('.produtos').addEventListener('mouseleave', function() {
+                    this.querySelector('.items').classList.remove('show');
+                });
+            </script>
+            <section id="corpo">
+                <div class="titulo">
+                    <h1>A nossa historia</h1>
+                    <h2>Shozo Kawasaki</h2>
+                    <h3>Tudo começou em 1878 pela mão de Shozo Kawasaki.</h3>
+                    <img src="_img/kawasaki-1930.jpeg">
+                    <p id="Motos">
+                    Atualmente a KAWASAKI HEAVY INDUSTRIES é uma empresa global que opera em diversos mercados. Os seus produtos então sempre na vanguarda da tecnologia de ponta.<br><br>
+                    A produção em massa de motociclos começou à mais de cinquenta anos atrás. O nosso primeiro motor foi projetado com base no conhecimento técnico obtido no desenvolvimento e produção de motores de avião. A entrada na indústria de motociclos foi impulsionada pelo esforço constante da Kawasaki em desenvolver novas tecnologias. Ao longo dos anos foram lançados vários modelos que ajudaram a moldar o mercado e a criar produtos lendários com base na velocidade e poder de nossas máquinas. Em 1996, produzimos o veículo número 10 milhões, provando a habilidade da Kawasaki em atender às necessidades dos mais diversos condutores. Como Kawasaki continua a "Deixar os bons tempos rolar", os nossos mais recentes desenvolvimento certamente irão dar origem a novas lendas.<br><br></p>
+                    <img id="avi" src="_img/kawasaki-aviao.jpg">
+                    <p id="aero">A Kawasaki Heavy Industries, Ltd. (KHI) é especializada na construção de sistemas de transporte desenvolvidos para o século 21, o seu desenvolvimento tem por base a riqueza de know-how tecnológico que acumulou ao longo dos últimos 100 anos. A divisão de construção naval tem produzido navios cada vez maiores, cada vez mais rápidos e cada vez mais automatizados, tendo como principal objetivo, encontrar formas de aumentar a eficiencia no fabrico, navegação e consumo de energia dos seus navios. A sua presistência resultou no desenvolvimento de Gás Natural Liquefeito (GNL) aplicado em navios de alta velocidade e outras tecnologias maritimas orientadas para o futuro. Através da aplicação de princípios de aviação, foi desenvolvido um ferry (Jetfoil) que tornou realidade acelerar acima da água a uns incríveis 45 nós. A Kawasaki liderou o projeto de construção naval Japonês formado para desenvolver o Techno-Superliner. Este emocionante navio foi projetado para transportar uma carga de aproximadamente 1.000 toneladas e viajar a uma velocidade de cruzeiro de 50 nós. A Kawasaki fornece material para o mundialmente famoso comboio bala (Shinkansen), bem como para outros comboios. A empresa está focada no desenvolvimento de um Shinkansen de nova geração que viaja a uma velocidade máxima de 390 km/h. A experiência da Kawasaki estende-se além do simples desenvolvimento e fabrico de material, os seus engenheiros desenvolvem sistemas de transporte, controlo de operações, inspeção e operações de reparação. No setor das aeronaves, a Kawasaki está envolvida numa ampla gama de atividades como fabricante da estrutura e motores de aeronaves. Atualmente, a empresa fabrica o helicóptero MBB K117 e partes do mais recente avião de passageiros, o Boeing 777. A Kawasaki é também um player importante no projeto para desenvolver o Supersonic Transport (SST), um avião que vai viajar a altitudes de 60.000 a 90.000 pés com uma velocidade Mach 2,5 e com capacidade para 200 a 300 passageiros. A Kawasaki aposta em tecnologias de transporte de alta velocidade que se estendem para além da atmosfera da Terra, tornando possível a nova missão que passa por utilizar o espaço e os seus recursos.
+                    </p>
+                    <div class="vid">
+                        <iframe id="vid" width="560" height="315" src="https://www.youtube.com/embed/nJzhmbGPrDU?si=BkhIeDACqbGAcEWw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+                </div>
+            </section><hr id="linha">
+            <footer>
+                <br><h1>CONTACTOS</h1>
+                <a href="Contactos.html"><p>Contactos Kawasaki Portugal</p></a><br><br><br><br><br><br><br>
+            </footer>
+        </div>
+    </body>
+</html>

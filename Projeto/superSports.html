@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="_css/estiloSS.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="_img/Kawasaki.ico">
+    <title>SuperSports</title>
+</head>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <a href="index.html"><img id="iconeHeader" src="_img/kawasaki-logo.svg"></a>
+            <nav id="menu">
+                <ul type="disk">
+                    <a href="historia.html"><li><span style="border-right: 1px solid white;">História&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                    <a href="conce.html"><li><span style="border-right: 1px solid white;">Concessonárias&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li></a>
+                </ul>
+            </nav>
+        </header><br><br><br><br>
+        <hr id="linha">
+        <div class="produtos">
+            <p>Veículos</p>
+            <div class="items">
+                <ul id="items">
+                    <h1>MOTOS</h1>
+                    <a href="superSports.html"><li id="fig"><figure><img src="_img/SuperSports.jpg"/><figcaption><h2>SuperSports & Sports</h2></figcaption></figure></li></a>
+                    <a href="superNakeds.html"><li id="fig"><figure><img src="_img/Supernaked.jpg"/><figcaption><h2>SuperNaked</h2></figcaption></li></a>
+                </ul>
+            </div>
+        </div>
+        <script>
+            document.querySelector('.produtos').addEventListener('mouseenter', function() {
+                setTimeout(() => {
+                    this.querySelector('.items').classList.add('show');
+                }, 1000);
+            });
+            document.querySelector('.produtos').addEventListener('mouseleave', function() {
+                this.querySelector('.items').classList.remove('show');
+            });
+        </script>
+
+        <section id="corpo"><hr id="linha">
+            <div class="H2r"><br>
+                <h1>H2R</h1>
+                <p>A Kawasaki Ninja H2R é uma obra de arte e a personificação da paixão da Kawasaki pelo
+                    desempenho, pela busca da excelência técnica e o desejo de alcançar a perfeita
+                    combinação entre motociclo e motociclista.Uma moto construída para além dos
+                    limites!A Ninja H2R é um motociclo não homologado para circular na via
+                    pública.</p>
+                <img src="_img/h2r.jpg">
+            </div><hr id="linha">
+            <div class="ZX4rr">
+                <h1>ZX-4rr</h1>
+                <p>Numa categoria repleta de modelos desportivos, a Kawasaki apresenta um revolucionário modelo
+                    Supersport. A Ninja ZX-4RR possui um motor em linha de 400 cc com desempenho líder na
+                    categoria montado num chassi compacto. Em pista ou na cidade, experimentar a
+                    potência sem precedentes da Ninja ZX-4RR, o emocionante gemido em altas
+                    rotações e a maneabilidade precisa e ágil certamente despertarão o
+                    instinto Supersport adormecido dentro de si.</p>
+                <img src="_img/kawasaki-ninja-zx-4rr.jpg">
+            </div><hr id="linha">
+            </div>
+        </section>
+        <footer>
+            <br><h1>CONTACTOS</h1>
+            <a href="Contactos.html"><p>Contactos Kawasaki Portugal</p></a><br><br><br><br><br><br><br>
+        </footer>
+    </div>
+</body>
+</html>
